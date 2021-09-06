@@ -57,7 +57,6 @@ public class StudentService {
 			student.setName(name);
 		}
 		if(email != null &&
-				email.length() > 0 &&
 				email.contains("@") &&
 				!student.getEmail().equals(email)) {
 			Optional<Student> studentOptional = studentRepository
